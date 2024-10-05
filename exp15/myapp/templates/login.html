@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Applications using Django Framework</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        h2, h3, h4 {
+            font-size: 22px;
+            margin: 10px 0;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            padding: 20px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: #ffffff;
+        }
+        label {
+            display: inline-block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="tel"] {
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .form-group input {
+            width: 60%;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kamaraj College of Engineering and Technology</h1>
+    <h2>Web Applications using Django Framework</h2>
+    <h3>Chellapandi TR</h3> 
+    <h3>22UIT072</h3>
+    <h4>Creating Session and Cookies using Django</h4>
+
+    <form method="POST" action="">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+        </div>
+        <div class="form-group">
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile">
+        </div>
+        <button type="submit">Log In</button>
+    </form>
+</body>
+</html>
